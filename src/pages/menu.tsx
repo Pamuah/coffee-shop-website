@@ -13,11 +13,36 @@ const Menu = () => {
           <p className="text-2xl font-bold text-white mb-1 mt-3">OUR MENU</p>
           <div className="h-1.5 w-12 bg-yellow-400"></div>
         </div>
-        <div className="flex flex-row gap-x-8 p-16 justify-center items-center">
+        <div className="grid grid-cols-3  justify-center items-center mt-8">
           <MenuWidget
             title="Chocolate Cake"
-            description="Freshly baked cake with chocolate frosting and a hint of vanilla."
+            description={
+              <>
+                Freshly baked cake with chocolate frosting <br />
+                and a hint of vanilla.
+              </>
+            }
             imageUrl="/assets/chocolate cake.webp"
+          />
+          <MenuWidget
+            title="Chocolate Cake"
+            description={
+              <>
+                Freshly baked cake with strawberry frosting <br />
+                and a hint of vanilla.
+              </>
+            }
+            imageUrl="/assets/cake.png"
+          />
+          <MenuWidget
+            title="Vanilla Cake"
+            description={
+              <>
+                Freshly baked cake with vanilla frosting <br />
+                and a hint of vanilla.
+              </>
+            }
+            imageUrl="/assets/slice cake.webp"
           />
         </div>
       </div>

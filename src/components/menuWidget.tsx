@@ -2,7 +2,7 @@ import React from "react";
 
 type MenuWidgetProps = {
   title: string;
-  description: string;
+  description: React.ReactNode;
   imageUrl: string;
 };
 
